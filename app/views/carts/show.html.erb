@@ -1,0 +1,7 @@
+<h1>カートの中身</h1>
+<% @cart_items.each do |e| %>
+    <%= e.product_id %>
+    <%= e.qty %><br>
+<% end %>
+
+<%= link_to '[商品一覧]',products_path %>
